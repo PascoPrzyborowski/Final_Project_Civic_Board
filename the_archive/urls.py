@@ -1,12 +1,10 @@
 from django.urls import path
 from . import views
-
-# from the_archive.views import
+from the_archive.views import UploadListView, UploadDataView
 
 urlpatterns = [
-    # path("", views.home, name="the_archive-home"),
-    # path("about/", views.about, name="the_archive-about"),
-    path("", views.UploadListAPI.as_view(), name="api-list-view"),
-    path("upload/", views.UploadAPI.as_view(), name="api-upload"),
-    path("upload/<int:pk>", views.UploadModifyApi.as_view(), name="api-mod"),
+    path("", views.home, name="the_archive-home"),
+    path("about/", views.about, name="the_archive-about"),
+    path("archive/", UploadListView.as_view(), name="the_archive-list"),
+    path("archive/upload/", UploadDataView.as_view(), name="the_archive-upload")
 ]
