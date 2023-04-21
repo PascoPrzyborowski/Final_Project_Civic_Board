@@ -1,0 +1,50 @@
+{% extends "interactive_archive_app/base.html" %}
+{% block content %}
+
+<style>
+    /* Add a style to make text white */
+    p {
+      color: white;
+    }
+
+    
+.intro-link {
+    color: #cbd5db;
+    }
+.intro-link:hover {
+    color: #ffffff;
+    }
+  </style>
+  
+   
+    </b><h1>Behind the Scene <br>- The Team -</h1></b>
+    <p> </p>
+
+    <p> Here you have a little look behind the scenes <br> 
+        of the Platform and its history of origin!</p>
+        
+    <p> <br> </p>
+    <p> Best Experience with a bit of Music.</p>
+    <p> </p>
+    <p> <br> </p>
+    
+        <p><a class="intro-link" href="{% url 'the_archive-intro' %}" >Begin of the Voyage (Intro)</a></p>
+        <p> </p>
+        <p><a class="intro-link" href="{% url 'the_archive-credits' %}" >The People behind it (Credits)</a></p>
+    <p> <br> </p>
+    <p> </p>
+    <p> If you don't hear the music:
+    <p> </p>
+    
+    <p> In FireFox Browser goto:<br>
+        Settings --> Privacy&Security --> Scroll down to Permissions --> <br> 
+        Autoplay --> Settings --> <br>
+        Default Websites --> Allow Audio and Video --> <br>
+        and the Button down : Save Changes</p>
+        
+    
+{% endblock content %} 
+
+
+
+

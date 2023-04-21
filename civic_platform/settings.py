@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # apps
     "users.apps.UsersConfig",
     "the_archive.apps.TheArchiveConfig",
+    "interactive_archive_app",
 ]
 
 MIDDLEWARE = [

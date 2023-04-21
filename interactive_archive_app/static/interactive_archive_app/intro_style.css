@@ -1,0 +1,24 @@
+.tw-cursor {
+  border-right: 2px solid #fff;
+  display: initial;
+  animation: blinkCursor 500ms steps(11) infinite normal;
+}
+
+@keyframes blinkCursor{
+from{border-right-color: #fff;}
+to{border-right-color: #000;}
+}
+
+
+body {
+    background-color: black;color:darkred;font-family: 'Roboto Condensed', sans-serif;padding:0;margin:0;font-size:25px;
+}
+.div-outside {
+     margin: 150px auto;
+     text-align: center;
+}
+.div-inside {
+    width:90vh;margin:auto;text-align: center;
+}
+.div-inside > div { margin: 20px auto; }
+

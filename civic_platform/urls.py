@@ -33,4 +33,5 @@ urlpatterns = [
     # API endpoints
     path("api/archive/", include("the_archive.urls")),
     path("api/users/", include("users.urls")),
+    path("interactive_archive/", include("interactive_archive_app.urls")),
 ]
